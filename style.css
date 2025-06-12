@@ -1077,7 +1077,7 @@ a:hover {
 }
 
 .distributor-info {
-    background: var(--color-primary);
+    background: #043465;
     color: var(--color-btn-primary-text);
     padding: var(--space-16) var(--space-24);
     border-radius: var(--radius-full);
