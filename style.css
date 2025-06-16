@@ -1065,7 +1065,7 @@ a:hover {
 
 .cover-subtitle {
     font-size: var(--font-size-xl);
-    color: var(--color-text);
+    color: var(--color-secondary);
     margin-bottom: var(--space-16);
     font-weight: var(--font-weight-medium);
 }
