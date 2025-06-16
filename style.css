@@ -1649,7 +1649,7 @@ a:hover {
 }
 
 .contact-section {
-    background: var(--color-primary);
+    background: var(--color-btn-primary-text);
     color: var(--color-btn-primary-text);
     padding: var(--space-20);
     border-radius: var(--radius-lg);
