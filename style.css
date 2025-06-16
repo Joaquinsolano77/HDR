@@ -998,8 +998,9 @@ a:hover {
 }
 
 .medcare-logo-portada {
-  max-width: 380px;
+  max-width: 580px;
   height: auto;
+  background: #fff; 
   box-shadow: none;
   border: none;
   margin: 0 auto;
@@ -1669,6 +1670,10 @@ a:hover {
     padding: var(--space-20);
     border-radius: var(--radius-lg);
     text-align: center;
+}
+
+.contact-section h3 {
+  color: #fff;
 }
 
 .contact-info {
