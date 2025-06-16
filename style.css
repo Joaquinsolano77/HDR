@@ -997,6 +997,22 @@ a:hover {
     background-clip: text;
 }
 
+.medcare-logo-portada {
+  max-width: 180px;
+  height: auto;
+  background: transparent;
+  box-shadow: none;
+  border: none;
+  margin: 0 auto;
+  display: block;
+}
+
+.medcare-logo-header {
+  max-width: 80px;
+  height: auto;
+  margin-left: 0;
+}
+
 /* Cover Slide */
 .slide-cover {
     position: relative;
