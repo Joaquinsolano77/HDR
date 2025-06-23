@@ -514,6 +514,10 @@ select.form-control {
     rgba(var(--color-warning-rgb, 168, 75, 47), var(--status-border-opacity));
 }
 
+.faq-section {
+  margin-bottom: 32px;
+}
+
 .status--info {
   background-color: rgba(
     var(--color-info-rgb, 98, 108, 113),
