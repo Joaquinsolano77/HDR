@@ -998,13 +998,15 @@ a:hover {
 }
 
 .medcare-logo-portada {
-  max-width: 580px;
+  width: 720px; /* Tamaño más grande */
+  max-width: 100%; /* Para que sea responsive y no se salga de la pantalla */
   height: auto;
-  background: #fff; 
+  background: #fff; /* Fondo blanco sólido */
   box-shadow: none;
   border: none;
   margin: 0 auto;
   display: block;
+  padding: 16px; /* Opcional: para separar el logo del fondo si lo necesitas */
 }
 
 .medcare-logo-header {
@@ -1016,18 +1018,19 @@ a:hover {
 .image-row {
   display: flex;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
   gap: 24px;
   margin-top: 24px;
 }
 
 .image-row .content-img {
-  max-width: 260px;
-  width: 100%;
-  height: 180px;
-  object-fit: cover;
-  border-radius: 12px;
-  box-shadow: 0 2px 8px rgba(24,58,90,0.08);
+  width: 48%; /* Ocupan casi la mitad cada una, con gap de 24px */
+  max-width: 360px; /* Puedes ajustar según el diseño */
+  height: auto; /* Altura auto para mantener proporciones */
+  object-fit: contain; /* Para ver la imagen completa, sin recortes */
+  border: none; /* Sin bordes */
+  box-shadow: none; /* Sin sombra */
+  border-radius: 0; /* Sin bordes redondeados */
 }
 
 @media (max-width: 700px) {
@@ -1037,8 +1040,9 @@ a:hover {
     align-items: center;
   }
   .image-row .content-img {
+    width: 100%;
     max-width: 90vw;
-    height: 140px;
+    height: auto;
   }
 }
 
