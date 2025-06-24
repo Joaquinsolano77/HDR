@@ -558,6 +558,16 @@ select.form-control {
   }
 }
 
+.spaced-images {
+  margin-top: 20px; /* Ajusta el valor según el espacio que necesites */
+  text-align: center; /* Asegura que las imágenes estén centradas */
+}
+
+.content-img {
+  max-width: 45%; /* Ajusta el tamaño de las imágenes si es necesario */
+  margin: 0 10px; /* Espaciado horizontal entre imágenes */
+}
+
 /* Utility classes */
 .flex {
   display: flex;
