@@ -1027,6 +1027,54 @@ a:hover {
 .image-row {
   display: flex;
   justify-content: center;
+  align-items: center;
+  gap: 24px;
+  margin-top: 24px;
+  background: white; /* Fondo blanco */
+  padding: 20px; /* Espacio interior */
+  border-radius: 8px; /* Bordes redondeados */
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08); /* Sombra suave */
+}
+
+.image-row .content-img {
+  width: 100%; /* Ocupa todo el ancho disponible */
+  max-width: 500px; /* Máximo ancho para imágenes grandes */
+  height: auto;
+  object-fit: contain;
+  border: none;
+  box-shadow: none;
+  border-radius: 0;
+  display: block; /* Asegura centrado */
+  margin: 0 auto; /* Centrado horizontal */
+}
+
+@media (max-width: 700px) {
+  .image-row {
+    flex-direction: column;
+    gap: 20px; /* Más espacio entre imágenes */
+    padding: 15px;
+  }
+  .image-row .content-img {
+    max-width: 100%; /* Ajuste completo en móviles */
+  }
+}
+
+.process-circular .content-with-image {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+.process-circular .process-flow {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin-bottom: 24px;
+  width: 100%;
+}
+.process-circular .image-row {
+  display: flex;
+  justify-content: center;
   gap: 24px;
   background: white;
   padding: 20px;
@@ -1035,7 +1083,7 @@ a:hover {
   width: 100%;
   max-width: 1100px;
 }
-.image-row .content-img {
+.process-circular .image-row .content-img {
   width: 100%;
   max-width: 500px;
   height: auto;
@@ -1047,17 +1095,17 @@ a:hover {
   margin: 0 auto;
 }
 @media (max-width: 700px) {
-  .content-with-image {
+  .process-circular .content-with-image {
     flex-direction: column;
     align-items: center;
   }
-  .image-row {
+  .process-circular .image-row {
     flex-direction: column;
     gap: 20px;
     padding: 15px;
     max-width: 90vw;
   }
-  .image-row .content-img {
+  .process-circular .image-row .content-img {
     max-width: 100%;
   }
 }
@@ -1196,11 +1244,10 @@ a:hover {
 
 /* Content with Image Layout */
 .content-with-image {
-    display: flex;
+    display: grid;
     grid-template-columns: 2fr 1fr;
     gap: var(--space-32);
-    flex-direction: column;
-    align-items: center;
+    align-items: start;
     margin-bottom: var(--space-20);
 }
 
@@ -1425,8 +1472,8 @@ a:hover {
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    gap: var(--space-16);
-    margin-bottom: var(--space-24);
+    gap: var(--space-12);
+    margin-bottom: var(--space-20);
 }
 
 .process-step {
