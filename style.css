@@ -558,11 +558,6 @@ select.form-control {
   }
 }
 
-.spaced-images {
-  margin-top: 20px; /* Ajusta el valor según el espacio que necesites */
-  text-align: center; /* Asegura que las imágenes estén centradas */
-}
-
 .content-img {
   max-width: 45%; /* Ajusta el tamaño de las imágenes si es necesario */
   margin: 0 10px; /* Espaciado horizontal entre imágenes */
@@ -1035,29 +1030,78 @@ a:hover {
   align-items: center;
   gap: 24px;
   margin-top: 24px;
+  background: white; /* Fondo blanco */
+  padding: 20px; /* Espacio interior */
+  border-radius: 8px; /* Bordes redondeados */
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08); /* Sombra suave */
 }
 
 .image-row .content-img {
-  width: 48%; /* Ocupan casi la mitad cada una, con gap de 24px */
-  max-width: 360px; /* Puedes ajustar según el diseño */
-  height: auto; /* Altura auto para mantener proporciones */
-  object-fit: contain; /* Para ver la imagen completa, sin recortes */
-  border: none; /* Sin bordes */
-  box-shadow: none; /* Sin sombra */
-  border-radius: 0; /* Sin bordes redondeados */
+  width: 100%; /* Ocupa todo el ancho disponible */
+  max-width: 500px; /* Máximo ancho para imágenes grandes */
+  height: auto;
+  object-fit: contain;
+  border: none;
+  box-shadow: none;
+  border-radius: 0;
+  display: block; /* Asegura centrado */
+  margin: 0 auto; /* Centrado horizontal */
 }
 
 @media (max-width: 700px) {
   .image-row {
     flex-direction: column;
-    gap: 12px;
-    align-items: center;
+    gap: 20px; /* Más espacio entre imágenes */
+    padding: 15px;
   }
   .image-row .content-img {
-    width: 100%;
-    max-width: 90vw;
-    height: auto;
+    max-width: 100%; /* Ajuste completo en móviles */
   }
+}
+
+.clinical-studies {
+  display: flex;
+  gap: 24px;
+  margin: 24px 0;
+  justify-content: center;
+}
+
+.study-card {
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
+  padding: 16px;
+  width: 45%;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.study-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.efficiency-badge {
+  background: #ff6b6b;
+  color: white;
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-weight: bold;
+}
+
+.study-link {
+  display: block;
+  margin-top: 12px;
+  color: #183A5A;
+  text-decoration: underline;
+}
+
+.study-context {
+  background: #f8f9fa;
+  border-left: 4px solid #183A5A;
+  padding: 12px;
+  margin-top: 24px;
+  font-size: 0.9em;
 }
 
 /* Cover Slide */
